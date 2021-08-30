@@ -12,7 +12,6 @@ const DB = process.env.DB_CONNECTION_STR.replace(
   '<PASSWORD>',
   process.env.DB_PASSWORD
 );
-// console.log(process.env);
 
 mongoose
   // .connect(process.env.DB_LOCAL, {
@@ -36,5 +35,3 @@ process.on('unhandledRejection', (err) => {
     process.exit(1);
   });
 });
-
-// console.log(x);
