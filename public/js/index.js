@@ -2,6 +2,7 @@
 import '@babel/polyfill';
 import { displayMap } from './mapbox';
 import { login, logout } from './login';
+import { hideAlert, showAlert } from './alerts';
 import { updateSettings } from './updateSettings';
 import { bookTour } from './stripe';
 
@@ -76,3 +77,6 @@ if (bookBtn) {
     bookTour(tourId);
   });
 }
+
+const alertMessage = document.querySelector('body').dataset.alert;
+if (alert) showAlert('success', alertMessage, 20);
