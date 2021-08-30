@@ -17,8 +17,9 @@ const globalErrorHandler = require('./controllers/errorController');
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
-const viewRouter = require('./routes/viewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
+const bookingController = require('./routes/bookingController');
+const viewRouter = require('./routes/viewRoutes');
 
 const app = express();
 
@@ -64,6 +65,14 @@ const limiter = rateLimit({
 
 // Limit requests from same API
 app.use('/api', limiter);
+
+// Body needs to be in raw format and not be parsed to JSON in next middleware line 77
+app.post(
+  '/webhook-checkout',
+  express.raw({ type: 'application/json' }),
+  bookingController.webhookCheckout
+);
+
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
