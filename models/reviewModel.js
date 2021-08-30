@@ -60,7 +60,6 @@ reviewSchema.pre(/^find/, function (next) {
  * @param {*} tourId
  */
 reviewSchema.statics.calcAverageRatings = async function (tourId) {
-  console.log(tourId);
   const stats = await this.aggregate([
     {
       $match: { tour: tourId },
@@ -98,7 +97,7 @@ reviewSchema.post('save', function () {
 // Query middleware does not have access to the current document
 // but can be retrieved from database and stored on current query variable
 reviewSchema.pre(/^findOneAnd/, async function (next) {
-  console.log(this);
+  // console.log(this);
   this.r = await this.findOne();
   next();
 });
