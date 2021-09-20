@@ -1,5 +1,7 @@
 # Natours Application
 
+Visit the deployed application [here][natours-deployed]
+
 Built using the following main technologies:
 
 ![NodeJS](https://img.shields.io/badge/nodejs-339933?style=for-the-badge&logo=Node.js&logoColor=white)
@@ -128,6 +130,10 @@ Built using the following main technologies:
 - [@babel/polyfill][babel]
 
   Provides polyfills necessary for a full ES2015+ environment
+  
+ ## Acknowledgements
+ 
+ This project was authored by Jonas Schmedtmann and taught as part of [Node.js, Express, MongoDB & More: The Complete Bootcamp 2021][udemy-course] on Udemy
 
 [axios]: https://www.npmjs.com/package/axios
 [babel]: https://www.npmjs.com/package/
@@ -142,10 +148,12 @@ Built using the following main technologies:
 [hpp]: https://www.npmjs.com/package/hpp
 [jwt]: https://www.npmjs.com/package/jsonwebtoken
 [multer]: https://www.npmjs.com/package/multer
+[natours-deployed]: https://natours-fdeboo.herokuapp.com/
 [ndb]: https://www.npmjs.com/package/ndb
 [nodemailer]: https://www.npmjs.com/package/nodemailer
 [sharp]: https://www.npmjs.com/package/sharp
 [slugify]: https://www.npmjs.com/package/slugify
 [stripe]: https://www.npmjs.com/package/stripe
+[udemy-course]: https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/
 [validator]: https://www.npmjs.com/package/validator
 [xss-clean]: https://www.npmjs.com/package/xss-clean
