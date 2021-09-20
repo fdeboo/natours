@@ -9,68 +9,87 @@ Built using the following main technologies:
 
 ## Dependencies
 
-"@babel/polyfill": "",
-"babe": "^0.0.1",
+![axios](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/axios?style=for-the-badge)
+![@babel/polyfill](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/@babel/polyfill?style=for-the-badge)
+![Bcryptjs](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/bcryptjs?style=for-the-badge)
+![Compression](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/compression?style=for-the-badge)
+![Cookie-parser](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/cookie-parser?style=for-the-badge)
+![Cors](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/cors?logo=cors&style=for-the-badge)
+![Dotenv](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/dotenv?style=for-the-badge)
+![Express](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/express?logo=express&style=for-the-badge)
+![Express-mongo-sanitize](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/express-mongo-sanitize?style=for-the-badge)
+![Express-rate-limit](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/express-rate-limit?style=for-the-badge)
+![Helmet](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/helmet?logo=helmet&style=for-the-badge)
+![Hpp](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/hpp?style=for-the-badge)
+![jwt](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/jsonwebtoken?logo=jsonwebtokens&style=for-the-badge)
+![Multer](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/multer?style=for-the-badge)
+![ndb](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/ndb?style=for-the-badge)
+![Mongoose](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/mongoose?logo=mongoose&style=for-the-badge)
+![Nodemailer](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/nodemailer?style=for-the-badge)
+![Pug](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/pug?logo=pug&logoColor=white&style=for-the-badge)
+![Sharp](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/sharp?logo=sharp&style=for-the-badge)
+![Slugify](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/slugify?style=for-the-badge)
+![Stripe](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/stripe?logo=stripe&style=for-the-badge)
+![Validator](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/validator?style=for-the-badge)
+![Xss-clean](https://img.shields.io/github/package-json/dependency-version/fdeboo/Natours/xss-clean?style=for-the-badge)
 
 ### Image handling
 
-- [sharp][sharp] ^0.29.0
-
-  ![sharp](https://img.shields.io/badge/sharp-0.29.0-99cc00?style=for-the-badge&logo=sharp&logoColor=99cc00)
+- [Sharp][sharp]
 
   The typical use case for this high speed Node.js module is to convert large images in common formats to smaller, web-friendly JPEG, PNG, WebP and AVIF images of varying dimensions.
 
 ### Security Middleware
 
-- [helmet][helmet] ^4.6.0
+- [Helmet][helmet]
 
   Helmet helps you secure your Express apps by setting various HTTP headers. It is a Connect-style middleware, which is compatible with frameworks like Express. The top-level helmet function is a wrapper around 15 smaller middlewares, 11 of which are enabled by default.
 
-- [xss-clean][xss-clean] ^0.1.1
+- [xss-clean][xss-clean]
 
   Node.js Connect middleware to sanitize user input coming from POST body, GET queries, and url params. Works with Express, Restify, or any other Connect app.
 
-- [cors][cors] ^2.8.5
+- [cors][cors]
 
   Provides a Connect/Express middleware that can be used to enable CORS with various options.
 
-- [express-mongo-sanitize][express-mongo-sanitize] ^2.1.0
+- [express-mongo-sanitize][express-mongo-sanitize]
 
   Middleware which sanitizes user-supplied data to prevent MongoDB Operator Injection.
 
-- [express-rate-limit][express-rate-limit] ^5.3.0
+- [express-rate-limit][express-rate-limit]
 
   Basic rate-limiting middleware for Express. Limits repeated requests to public APIs and/or endpoints such as password reset.
 
-- [compression][compression] ^1.7.4
+- [compression][compression]
 
   Middleware that compresses text responses. It will attempt to compress response bodies for all request that traverse through the middleware, based on the given options
 
-- [cookie-parser][cookie-parser] ^1.4.5
+- [cookie-parser][cookie-parser]
 
   Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
 
-- [hpp][hpp] ^0.2.3
+- [hpp][hpp]
 
   Express middleware to protect against HTTP Parameter Pollution attacks
 
 ### Data Modelling
 
-- [bcrypt][bcrypt] ^2.4.3
+- [bcryptjs][bcrypt]
 
   A library to help you hash passwords.
 
-- [validator][validator] ^13.6.0
+- [validator][validator]
 
   A library of validators and sanitizers for strings only
 
-- [slugify][slugify] ^1.6.0
+- [slugify][slugify]
 
   A Javascript package that turns a string into a url slug.
 
 ### Frontend
 
-- pug ^3.0.2 (templating)
+- [pug][pug]
 
   A template engine for Node and for the browser. It compiles to HTML but has a simplified syntax. It makes it easy to render data pulled from a database or API
 
@@ -78,35 +97,35 @@ Built using the following main technologies:
 
 ### Other
 
-- [![JWT](https://img.shields.io/badge/JWT-8.5.1-000?style=for-the-badge&logo=JSONWebTokens&logoColor=white)][jwt]
+- [jsonwebtoken][jwt]
 
   The most common scenario for using JWT is Authorization. Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token. Single Sign On is a feature that widely uses JWT nowadays, because of its small overhead and its ability to be easily used across different domains.
 
-- [![Stripe](https://img.shields.io/badge/Stripe-8.171.0-008cdd?style=for-the-badge&logo=Stripe&logoColor=008cdd)][stripe]
+- [Stripe][stripe]
 
   payment processing API for e-commerce websites and mobile applications.
 
-- [multer][multer] ^1.4.3
+- [Multer][multer]
 
   Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading file inputs.
 
-- [dotenv][dotenv] 10.0.0
+- [Dotenv][dotenv]
 
   A zero-dependency module that loads environment variables from a .env file into process.env
 
-- [axios][axios] ^0.21.1 (requests from front end to backend api)
+- [Axios][axios] (requests from front end to backend api)
 
   Promise based HTTP client for the browser and node.js
 
-- [nodemailer][nodemailer] ^6.6.3 (sending basic emails)
+- [Nodemailer][nodemailer] (sending basic emails)
 
   Nodemailer is a module for Node.js applications to allow easy as cake email sending. The project got started back in 2010 when there was no sane option to send email messages, today it is the solution most Node.js users turn to by default.
 
-- [ndb][ndb] ^1.1.5
+- [ndb][ndb]
 
   Node Debugger is a debugging environment enabled by Chrome DevTools
 
-- [@babel/polyfill][babel] ^7.12.1
+- [@babel/polyfill][babel]
 
   Provides polyfills necessary for a full ES2015+ environment
 
