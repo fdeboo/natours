@@ -151,6 +151,7 @@ Built using the following main technologies:
 [natours-deployed]: https://natours-fdeboo.herokuapp.com/
 [ndb]: https://www.npmjs.com/package/ndb
 [nodemailer]: https://www.npmjs.com/package/nodemailer
+[pug]: https://www.npmjs.com/package/pug
 [sharp]: https://www.npmjs.com/package/sharp
 [slugify]: https://www.npmjs.com/package/slugify
 [stripe]: https://www.npmjs.com/package/stripe
